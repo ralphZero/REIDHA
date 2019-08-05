@@ -1,6 +1,6 @@
 # *REIDHA*
 
-**REIDHA** is an android app that allows a user to view his Twitter timeline and post a new tweet. The app utilizes [Twitter REST API](https://dev.twitter.com/rest/public).
+**REIDHA** REIDHA is a census app made for IHSI (Institut Haitien de Statistiques et d'Informatique) [IHSI](http://www.ihsi.ht/).
 
 Time spent: **43.8** hours spent in total
 
