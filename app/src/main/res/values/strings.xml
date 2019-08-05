@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">REIDHA</string>
+    <string name="logo_Text1">Institut Haitien de Statistique et d\'Informatique</string>
+    <string name="logo_Text2">Ministère de l\'Economie et des Finances</string>
+    <string name="title_activity_add_agent">AddAgentActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_add">AddActivity</string>
+    <string name="title_activity_show">ShowActivity</string>
+    <string name="title_activity_edit">EditActivity</string>
+    <string name="currentIPAddress">172.16.1.168</string>
+</resources>

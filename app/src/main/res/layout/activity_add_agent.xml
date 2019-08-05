@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context=".AddAgentActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/background_light"
+            android:theme="@style/AppTheme.ToolbarTheme"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/content_add_agent" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_add_agent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:backgroundTint="@android:color/background_light"
+        app:fabSize="normal"
+        app:layout_anchor="@+id/include2"
+        app:layout_anchorGravity="right|top"
+        app:srcCompat="@drawable/ic_photo_camera_black_24dp" />
+
+</android.support.design.widget.CoordinatorLayout>

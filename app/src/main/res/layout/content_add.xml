@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AddActivity"
+    tools:showIn="@layout/activity_add">
+
+    <EditText
+        android:id="@+id/add_lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Nom"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/add_firstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_lastname"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Prénom"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/add_birthdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_firstname"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:drawableEnd="@drawable/ic_date_range_black_24dp"
+        android:editable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Date de naissance"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/add_cin_nif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_birthdate"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="CIN ou NIF"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/add_txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_cin_nif"
+        android:layout_marginLeft="25dp"
+        android:text="Sexe" />
+
+    <RadioGroup
+        android:id="@+id/add_sexe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_txt1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/add_homme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Homme" />
+
+        <RadioButton
+            android:id="@+id/add_femme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Femme" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/add_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_sexe"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Adresse"
+        android:inputType="textPostalAddress" />
+
+    <EditText
+        android:id="@+id/add_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_address"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Téléphone"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/add_txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_phone"
+        android:layout_marginLeft="25dp"
+        android:text="Situation matrimoniale" />
+
+    <RadioGroup
+        android:id="@+id/add_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_txt2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp">
+
+        <RadioButton
+            android:id="@+id/add_celibataire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Célibataire" />
+
+        <RadioButton
+            android:id="@+id/add_marie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Marié(e)" />
+
+        <RadioButton
+            android:id="@+id/add_veuf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Veuf(ve)" />
+
+        <RadioButton
+            android:id="@+id/add_divorce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Divorcé(e)" />
+
+        <RadioButton
+            android:id="@+id/add_autre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Autre" />
+    </RadioGroup>
+
+</RelativeLayout>
